@@ -28,7 +28,7 @@ Cada evento contiene los siguientes campos:
 - `id: number`
 - `title: string`
 - `description: string`
-- `type: string` (ej: Proyecto, Informe, Laboratorio, Práctico)
+- `type: string` (ej: Reunion, Taller, Conferencia)
 - `direction: string`
 - `startDate: Date`
 - `endDate: Date`
@@ -67,6 +67,60 @@ Cada evento contiene los siguientes campos:
    - Inputs de fecha y hora separados para evitar desbordes en pantallas pequeñas.
 
 ---
+
+## Instalación y Ejecución
+
+Sigue estos pasos para ejecutar la aplicación en otra máquina:
+
+### 1. Clonar el repositorio
+
+```bash
+git clone https://github.com/usuario/event-dashboard.git
+2. Ubicarse en la carpeta del proyecto
+bash
+Copiar
+Editar
+cd event-dashboard
+3. Instalar dependencias
+bash
+Copiar
+Editar
+npm install
+4. Configurar la API
+Edita el archivo src/api/tasks.ts y coloca la URL de tu proyecto en MockAPI:
+
+ts
+Copiar
+Editar
+export const API_URL = "https://tu-proyecto.mockapi.io/api/v1/events";
+5. Ejecutar la aplicación en modo desarrollo
+bash
+Copiar
+Editar
+npm run dev
+6. Abrir la aplicación
+Localmente en tu computadora:
+
+arduino
+Copiar
+Editar
+http://localhost:5173
+Desde otro dispositivo en la misma red local:
+
+cpp
+Copiar
+Editar
+http://<IP_DE_TU_MAQUINA>:5173
+Asegúrate de que tu firewall permita conexiones al puerto 5173.
+
+csharp
+Copiar
+Editar
+
+Si quieres, puedo integrar **estos pasos dentro de tu README completo**, junto con la descripción de la app y tecnologías usadas, listo para subir a GitHub.
+
+¿Quieres que haga eso?
+```
 
 # React + TypeScript + Vite
 
