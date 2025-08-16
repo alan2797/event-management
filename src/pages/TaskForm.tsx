@@ -118,29 +118,34 @@ const handleSubmit = async (values: Task) => {
                 <Option value="Taller">Taller</Option>
               </Select>
             </Form.Item>
-            <Form.Item label="Ubicación/Direccion" name="direction" rules={[{ required: true, message: "La ubicación es obligatoria" }]}>
+            <Form.Item label="Ubicación/Direccion" 
+            name="direction" rules={[{ required: true, message: "La ubicación es obligatoria" }]}>
                 <Input placeholder="Lugar del evento" />
             </Form.Item>
              <Row gutter={8}>
             <Col span={12}>
-            <Form.Item label="Fecha de inicio" name="startDate">
+            <Form.Item label="Fecha de inicio" name="startDate"
+            rules={[{ required: true, message: "La fecha es obligatoria" }]}>
                 <DatePicker style={{ width: "100%" }} />
             </Form.Item>
             </Col>
             <Col span={12}>
-            <Form.Item label="Hora de inicio" name="startTime">
+            <Form.Item label="Hora de inicio" name="startTime"
+            rules={[{ required: true, message: "La Hora es obligatoria" }]}>
                 <TimePicker style={{ width: "100%" }} format="HH:mm" />
             </Form.Item>
                 </Col>
             </Row>
             <Row gutter={8}>
                 <Col span={12}>
-                <Form.Item label="Fecha de fin" name="endDate">
+                <Form.Item label="Fecha de fin" name="endDate"
+                rules={[{ required: true, message: "La fecha es obligatoria" }]}>
                     <DatePicker style={{ width: "100%" }} />
                 </Form.Item>
                 </Col>
                 <Col span={12}>
-                <Form.Item label="Hora de fin" name="endTime">
+                <Form.Item label="Hora de fin" name="endTime"
+                rules={[{ required: true, message: "La Hora es obligatoria" }]}>
                     <TimePicker style={{ width: "100%" }} format="HH:mm" />
                 </Form.Item>
                 </Col>
