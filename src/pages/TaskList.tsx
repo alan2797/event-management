@@ -174,7 +174,11 @@ export default function TaskList() {
               <TaskChart tasks={tasks} />
             </Card>
           </Col>
+          <Col span={24}>
+            <Text strong>Filtros: </Text>
+          </Col>
           <Row gutter={8} style={{ marginBottom: 16 }}>
+          
             <Col flex="auto">
               <Input
                 placeholder="Buscar eventos..."
