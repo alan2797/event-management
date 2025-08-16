@@ -260,7 +260,7 @@ export default function TaskList() {
               <Tabs.TabPane
                 tab={
                   <Badge count={filteredCompletedTasks.length}>
-                    Completadas
+                    Realizados
                   </Badge>
                 }
                 key="completed"
